@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #dfdddd url(imagens/bg.png);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#principal {
+  margin: 10px auto;
+  width: 85%;
+  min-width: 790px;
+  max-width: 1200px;
+}
+#topo {
+  background: url(imagens/topo-imagem-principal.png) no-repeat;
+  display: flex;
+  justify-content: space-between;  
+}
+.menu {
+  background: url(imagens/topo-imagem-lateral.png) no-repeat top left;
+  width: 40%; 
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 5px; 
+}
+.logo h1{
+  margin-left: -3000px;
+}
+#itens-menu {  
+  margin: 15px 15px 0 80px;
+}
+#itens-menu img{
+  width: 95%;
+}
+.reserva{
+  color: #958D58;
+  font-size: 0.8em;
+  padding: 10px 0 10px 0;
+  border-top:  1px solid #B5AB56;
+  border-bottom: 1px solid #B5AB56; 
+}
+.submit {
+  background: #A29750;
+  border: none;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 40px;
+  font-size: 0.9em;
+  color: #FEF4BE;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+ul{
+  list-style: none;
+}
+.links li{
+  padding: 5px 0 5px 0;
+}
+.links ul a{
+  color: #6E672C;
+  padding: 5px;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.links ul a:hover{
+  padding: 5px;
+  background: #FEF4BE;
+}
+
+.divisoria{
+  background: url(imagens/bg-area-lateral.png) repeat-x; 
+  height: 8px;
+}
+
+.conteudo {
+  background: url(imagens/bg-container.png) repeat-y center;
+  display: flex;
+  justify-content: space-between;
+}
+.textos{
+  width: 50%;
+  padding: 10px;
+}
+.links2{
+  width: 50%;
+  padding: 20px;
+}
+
+.links2 li a{
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  padding: 5px 5px 10px 5px;
+  border-bottom: 1px solid #FEF4BE; 
+  color: #000; 
+}
+.links2 h3{
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #615B2D;
+}
+.links2 li a:hover{
+  background: #F6F3D3;
+}
+.links2 img{
+  width: 30%;
+}
+.legenda {
+  width: 68%;
+}
+.textos{
+  padding: 10px 20px;
+  text-align: justify;
+}
+.textos h2{
+  margin-bottom: 10px;
+  color: #615B2D; 
+}
+.textos p{
+  text-indent: 30px;
+  margin-bottom: 2px;
+}
+.rodape{
+  padding: 10px;
+  background: #fff;
+  color: #958D58;
+}
+
+@media (max-width: 900px){
+  #principal{
+    width: 100%;
+  }
+  .menu{
+    width: 50%;
+  }
+  #itens-menu{
+    margin: 15px 15px 0px 90px;
+  }
+  .reserva form{
+    text-align: center;
+  }
+  .submit{
+    width: 50%;
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  .conteudo{
+    flex-direction: column;
+    background: none; 
+  }
+  .textos{
+    width: 95%;
+    background-color: #EFEACC;
+  }
+  .links2{
+    width: 95%;
+    background-color: #DED9B7;
+  }
+  .legenda{
+    font-size: 1.2em;
+  }
+}
